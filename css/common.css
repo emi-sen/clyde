@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@700&display=swap");
+
+/* 自動スクロール */
+:root {
+  scroll-behavior: smooth;
+}
+
+/* ［bodyの書式］書体:、背景色: */
+body {
+  /* デフォルトのテキストの書式 */
+  font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  background-color: #fffdf8;
+}
+
+/*［リンク文字の書式］文字色：親と同じ、下線なし */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ［ヘッダーh1の余白］ */
+header h1 {
+  padding-top: 23px;
+  padding-bottom: 29px;
+}
+
+/* ［ヘッダーnavの書式］ */
+nav {
+  border-top: 2px solid #6a6a6a;
+  border-bottom: 2px solid #6a6a6a;
+  margin-bottom: 36px;
+  /* ※メニューの書式でdisplay: inline;が使われているので移動した */
+  padding-top: 28px;
+  padding-bottom: 28px;
+  color: #54410c;
+  font-size: 18px;
+  /* ［メニューの書式］をstickyで固定配置 */
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 253, 248, 0.9);
+  z-index: 1;
+}
+
+/* Boxへの改訂のため削除 */
+/* ［メニューの書式］ */
+/* header nav ul li { */
+/* display: inline; */
+/* padding-left: 50px; */
+/* padding-right: 50px; */
+/* } */
+
+/* ［メニューの書式］ FlexBox */
+nav ul {
+  /* コンテナ幅設定 */
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* FlexBox設定 */
+  display: flex;
+  justify-content: space-between;
+}
+
+/*［メニューのリンク文字のホバー設定］下線表示、不透明度:70% */
+nav ul li a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+/* ［HOMEの書式］太字 */
+nav li.active a {
+  color: #000;
+  font-weight: bold;
+}
+
+/* メインのコンテナ幅固定！！必ず必要！！ */
+main {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* menu.cssでもcontact.cssでも使用したいため、common.cssに移動する！！ */
+/* 大見出し本日のメニューと背景画像の書式 */
+main article h1 {
+  color: #1d1502;
+  font-size: 40px;
+  font-weight: bold;
+  background-image: url(../img/since.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  /* background-color: #968b7f; 分かりやすくする為に仮で入れる */
+  /* ↓フィグマで(../img/since.png)に四角を描いて高さを測る
+  ※背景は内側に表示されるから11pxでは重なってしまう*/
+  padding-bottom: 57px;
+  margin-bottom: 67px;
+  margin-top: 67px;
+
+  /* フォント設定 */
+  font-family: "Kaisei Tokumin", serif;
+}
+
+/* ご予約はこちらの書式 */
+main aside p {
+  margin-bottom: 57px;
+}
+
+/*［ご予約はこちらの文字のホバー設定］不透明度:70% */
+main aside p a:hover {
+  opacity: 0.7;
+}
+
+/* フッターの背景 */
+footer {
+  background-color: #322707;
+  padding-top: 42px;
+}
+
+/* フッターセクションの書式 */
+footer section {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: #5f4e1c;
+  margin-bottom: 30px;
+}
+
+/* フッターセクションh2の書式 */
+footer section h2 {
+  color: #1d1502;
+  font-size: 20px;
+  padding-bottom: 6px;
+}
+
+/* フッターセクションPの書式 */
+footer section p {
+  color: #1d1502;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* フッターロゴの下余白 */
+footer p.footerlogo {
+  margin-bottom: 30px;
+}
+
+/* フッターマップの下余白 */
+footer p.map {
+  margin-bottom: 30px;
+}
+
+/* フッターアドレスの書式 */
+footer address {
+  color: #fffdf8;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* フッターアドレスアイコンの右余白 */
+footer address img {
+  padding-right: 9px;
+}
+
+/* フッター著作権の書式 */
+footer p.tyosakuken {
+  background-color: #000;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+/* フッター著作権の文字の書式 */
+footer p.tyosakuken small {
+  color: #fffdf8;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* ［ページトップ］固定配置 */
+footer p.pagetop {
+  position: fixed;
+  right: 34px;
+  bottom: 34px;
+}
+
+/* レスポンシブ */
+/* ［ヘッダーnavの書式］ */
+@media (max-width: 767px) {
+  /* ［ヘッダーnavの書式］ */
+  nav {
+    /* stickyを解除 */
+    position: unset;
+  }
+  /* ［メニューの書式］ FlexBox */
+  nav ul {
+    /* FlexBoxの解除 */
+    display: block;
+  }
+  /* 上下余白 */
+  nav ul li {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  /* ［フッターの書式］ */
+  /* 左右余白 */
+  footer div {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  /* モバイルでAll Rights Reserved.を表示させない */
+  footer p.tyosakuken span {
+    display: none;
+  }
+  /* ページトップの余白変更 */
+  footer p.pagetop {
+    right: 15px;
+  }
+}

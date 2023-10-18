@@ -1,0 +1,212 @@
+/* ［bodyの書式］書体:、背景色: */
+body {
+  /* デフォルトのテキストの書式 */
+  font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  background-color: #fffdf8;
+}
+
+/*［リンク文字の書式］文字色：親と同じ、下線なし */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ［ヘッダーh1の余白］ */
+header h1 {
+  padding-top: 23px;
+  padding-bottom: 29px;
+}
+
+/* ［ヘッダーnavの書式］ */
+header nav {
+  border-top: 2px solid #6a6a6a;
+  border-bottom: 2px solid #6a6a6a;
+  margin-bottom: 36px;
+  /* ※メニューの書式でdisplay: inline;が使われているので移動した */
+  padding-top: 28px;
+  padding-bottom: 28px;
+  color: #54410c;
+  font-size: 18px;
+}
+
+/* ［メニューの書式］ */
+header nav ul li {
+  display: inline;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/*［メニューのリンク文字のホバー設定］下線表示、不透明度:70% */
+header nav ul li a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+/* ［HOMEの書式］太字 */
+header nav li.active a {
+  color: #000;
+  font-weight: bold;
+}
+
+/* メインビジュアルの下余白：67 */
+p.visual {
+  padding-bottom: 67px;
+}
+
+/* メインのコンテナ幅固定！！必ず必要！！ */
+main {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* メインセクションmeinaiconの書式 */
+main ul.meinaicon li {
+  display: inline;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* メインセクション下の余白：67 */
+main section.mein1 ul {
+  margin-bottom: 67px;
+}
+
+/* メインセクションh2 LDの書式 */
+main h2.LD {
+  border-top: 2px solid #868686;
+  border-bottom: 2px solid #868686;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-bottom: 50px;
+
+  color: #1d1502;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* メインセクションPの書式 */
+main section p {
+  color: #1d1502;
+  font-size: 20px;
+  text-align: left;
+  line-height: 35px;
+  padding-bottom: 53px;
+}
+
+/* メイン1のボーダー */
+main section.mein1 {
+  border-bottom: 3px solid #000;
+  margin-bottom: 67px;
+}
+
+/* メインセクションh2 ibentの書式 */
+main h2.ibent {
+  border-top: 2px solid #868686;
+  border-bottom: 2px solid #868686;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-bottom: 50px;
+
+  color: #1d1502;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* メインセクションmeinibentの書式 */
+main ul.meinibent li {
+  margin-bottom: 50px;
+}
+
+/* メイン2のボーダー */
+main section.mein2 {
+  border-bottom: 3px solid #000;
+  margin-bottom: 77px;
+}
+
+/* ご予約はこちらの書式 */
+main aside p {
+  margin-bottom: 57px;
+}
+
+/*［ご予約はこちらの文字のホバー設定］不透明度:70% */
+main aside p a:hover {
+  opacity: 0.7;
+}
+
+/* フッターの背景 */
+footer {
+  background-color: #322707;
+  padding-top: 42px;
+}
+
+/* フッターセクションの書式 */
+footer section {
+  width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: #5f4e1c;
+  margin-bottom: 30px;
+}
+
+/* フッターセクションh2の書式 */
+footer section h2 {
+  color: #1d1502;
+  font-size: 20px;
+  padding-bottom: 6px;
+}
+
+/* フッターセクションPの書式 */
+footer section p {
+  color: #1d1502;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* フッターロゴの下余白 */
+footer p.footerlogo {
+  margin-bottom: 30px;
+}
+
+/* フッターマップの下余白 */
+footer p.map {
+  margin-bottom: 30px;
+}
+
+/* フッターアドレスの書式 */
+footer address {
+  color: #fffdf8;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* フッターアドレスアイコンの右余白 */
+footer address img {
+  padding-right: 9px;
+}
+
+/* フッター著作権の書式 */
+footer p.tyosakuken {
+  background-color: #000;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+/* フッター著作権の文字の書式 */
+footer p.tyosakuken small {
+  color: #fffdf8;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}

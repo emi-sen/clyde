@@ -1,0 +1,105 @@
+@import url(common.css);
+
+/* フォームの書式 */
+main div.flexBox {
+  display: flex;
+  font-size: 16px;
+  color: #1d1502;
+  font-weight: bold;
+  text-align: left;
+  /* 四角の大きさのところでmargin-bottom: 30px;設定してるため、
+  40－10＝30px */
+  padding: 40px 95px 10px 95px;
+  gap: 30px;
+  border: 2px solid #4a4a4a;
+  margin-bottom: 10px;
+  /* background-color: rgb(111, 174, 211); */
+}
+
+/* 文字下余白 */
+main div.flexBox legend {
+  /* background-color: aqua; */
+  margin-bottom: 15px;
+}
+
+/* 比率 */
+main div.name_mail_tel {
+  flex: 1;
+}
+
+/* 比率 */
+main div.contact {
+  flex: 1;
+}
+
+/* 四角の大きさ */
+main input[type="text"],
+main input[type="email"],
+main input[type="tel"],
+main textarea {
+  width: 100%;
+  /* 四角高さ44px－線2px＝42px
+    42px―（文字サイズ16px×1.5＝24）＝18px÷2＝9px */
+  padding: 9px;
+  margin-bottom: 30px;
+}
+
+/* お問い合わせ内容の四角 */
+main textarea {
+  height: 270px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+/* *は必須項目です。の文字 */
+main p.a {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+/* 送信ボタン */
+main form button {
+  /* 横余白の出し方 幅160px―文字サイズ32px（16×2）＝128px÷2＝64px */
+  font-size: 18px;
+  color: #fffdf8;
+  padding: 16.5px 64px;
+  border: none;
+  background-color: #6b5311;
+  cursor: pointer;
+  margin-bottom: 67px;
+}
+
+/* 不透明度:0.7 */
+main form button:hover {
+  opacity: 0.7;
+}
+
+main aside.kojinzyoho {
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 16px;
+  color: #fff;
+  background-color: #6b5311;
+  padding: 13px 30px;
+  margin-bottom: 67px;
+}
+
+main aside.kojinzyoho h2 {
+  padding-bottom: 6px;
+}
+
+main aside.kojinzyoho p {
+  text-align: left;
+  margin-bottom: unset;
+}
+
+/* レスポンシブ */
+/* スマホの書式 */
+@media (max-width: 767px) {
+  main div.flexBox {
+    display: block;
+    padding: 30px;
+  }
+}

@@ -1,0 +1,97 @@
+@import url(common.css);
+
+/* FlexBox、折り返す、横方向:均等配置 */
+main article div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* 枠線 */
+main article section {
+  border: 2px solid #4a4a4a;
+  /* heightは使わない！！paddingで余白を使う！！ */
+  padding-top: 44px;
+  padding-bottom: 44px;
+  margin-bottom: 67px;
+  /* FlexBox幅の可変 540÷1110×100% 計算する */
+  flex-basis: 48.6%;
+}
+
+/* 写真の下余白 */
+main article section p.picture {
+  margin-bottom: 22px;
+}
+
+/* 中見出しと背景画像の書式 */
+main article section h2 {
+  color: #54410c;
+  font-size: 24px;
+  font-weight: bold;
+  background-image: url(../img/line.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  /* background-color: #968b7f; */
+  padding-bottom: 48px;
+  margin-bottom: 22px;
+}
+
+/* 説明書式 */
+main article section p.shousai {
+  color: #1d1502;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+  /* 枠線が2pxの為、30-2=28px */
+  margin-left: 28px;
+  margin-right: 28px;
+  margin-bottom: 12px;
+}
+
+/* 金額書式 */
+main article section p.money {
+  color: #54410c;
+  font-size: 24px;
+  margin-bottom: 19px;
+}
+
+/* ボタンの書式 */
+main article section p.link a {
+  background-color: #6b5311;
+  font-size: 18px;
+  color: #fffdf8;
+  /* ボタンの上下余白のみ設定！！ */
+  padding: 16.5px 0;
+
+  display: block;
+  /* ↓ボタンの幅を測って入れる！！ */
+  max-width: 350px;
+
+  margin: 0 auto;
+
+  background-image: url(../img/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: right 24px center;
+}
+/* ボタンのホバー設定 */
+main article section p.link a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 991px) {
+  /* FlexBoxを解除 */
+  main article div {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  /* 枠の中の左右余白 */
+  main article section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* 元々ついているmarginは削除 */
+  main article section p.shousai {
+    margin: 0 auto;
+  }
+}

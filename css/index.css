@@ -1,0 +1,100 @@
+@import url(common.css);
+
+/* メインビジュアルの下余白：67 */
+p.visual {
+  padding-bottom: 67px;
+}
+
+/* メインセクションmeinaiconの書式 */
+/* main ul.meinaicon li { */
+/* display: inline; */
+/* padding-left: 15px; */
+/* padding-right: 15px; */
+/* } */
+
+main ul.meinaicon {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* メインセクション下の余白：67 */
+main section.mein1 ul {
+  margin-bottom: 67px;
+}
+
+/* メインセクションh2 LDの書式 */
+main h2.LD {
+  border-top: 2px solid #868686;
+  border-bottom: 2px solid #868686;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-bottom: 50px;
+
+  color: #1d1502;
+  font-size: 28px;
+  font-weight: bold;
+
+  /* フォント設定 */
+  font-family: "Kaisei Tokumin", serif;
+}
+
+/* メインセクションPの書式 */
+main section p {
+  color: #1d1502;
+  font-size: 20px;
+  text-align: left;
+  line-height: 35px;
+  padding-bottom: 53px;
+}
+
+/* メイン1のボーダー */
+main section.mein1 {
+  border-bottom: 3px solid #000;
+  margin-bottom: 67px;
+}
+
+/* メインセクションh2 ibentの書式 */
+main h2.ibent {
+  border-top: 2px solid #868686;
+  border-bottom: 2px solid #868686;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-bottom: 50px;
+
+  color: #1d1502;
+  font-size: 28px;
+  font-weight: bold;
+
+  /* フォント設定 */
+  font-family: "Kaisei Tokumin", serif;
+}
+
+/* メインセクションmeinibentの書式 */
+main ul.meinibent li {
+  margin-bottom: 50px;
+}
+
+/* メイン2のボーダー */
+main section.mein2 {
+  border-bottom: 3px solid #000;
+  margin-bottom: 77px;
+}
+
+/* レスポンシブ */
+@media (max-width: 767px) {
+  /* メインビジュアルの書式 */
+  p.visual img {
+    height: 300px;
+    /* 縦横比固定 */
+    object-fit: cover;
+    /* 右だけ固定 */
+    object-position: right;
+  }
+}

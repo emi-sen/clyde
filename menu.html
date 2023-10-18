@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>THE CLYDE HOME</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<!-- ↓84行目のaタグのリンク先 -->
+<body id="top">
+    <header>
+        <h1><a href="index.html"><img src="img/headerlogo.png" alt="THE CLYD"></a></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">ストーリー</a></li>
+            <li class="active"><a href="menu.html">メニュー</a></li>
+            <li><a href="#">イベント</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">ご予約</a></li>
+            <li><a href="#">ブログ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h1>本日のメニュー</h1>
+            <!-- FlexBoxを使うためdivを設定する！！ -->
+            <div>
+                <section>
+                    <p class="picture"><img src="img/chicken.png" alt="ローストチキン">
+                    </p>
+                    <h2>ローストチキン</h2>
+                    <p class="shousai">ローストチキンに使用しているタレは50年受け継がれてきた伝統のタレです。鶏肉は鮮度の一番良い朝引きの水郷どり。本格的なローストチキン料理をご堪能ください。</p>
+                    <p class="money">&yen;3,700</p>
+                    <p class="link"><a href="#">メインディッシュへ</a></p>
+                </section>
+
+                <section>
+                    <p class="picture"><img src="img/fruits_ice.png" alt="フルーツ＆アイスクリーム"></p>
+                    <h2>フルーツ＆アイスクリーム</h2>
+                    <p class="shousai">素材にこだわり厳選した高品質フルーツと濃厚なアイスクリームの優雅な甘さのハーモニー。香り高く芳醇な味わいとリッチな味わいが絶妙に調和した贅沢なデザートです。</p>
+                    <p class="money">&yen;1,800</p>
+                    <p class="link"><a href="#">デザートへ</a></p>
+                </section>
+
+                <section>
+                    <p class="picture"><img src="img/wain.png" alt="赤ワイングラス"></p>
+                    <h2>赤ワイングラス</h2>
+                    <p class="shousai">十分な糖度と豊かな果実味、主張しすぎない渋味が備わった、魅力的なワイン。繊細な口当たりと熟した果実の風味とともに、穏やかな酸とミネラルが広がっていきます。</p>
+                    <p class="money">&yen;1,500</p>
+                    <p class="link"><a href="#">ドリンクへ</a></p>
+                </section>
+            </div>
+        </article>
+
+        <aside>
+            <p><a href="#"><img src="img/yoyakubanner.png" alt="ご予約はこちら"></a></p>
+        </aside>
+    </main>
+
+    <footer>
+        <div>
+            <section>
+                <h2>営業時間</h2>
+                <p>6時〜23時（午後11時）</p>
+            </section>
+
+            <p class="footerlogo"><img src="img/footerlogo.png" alt=""></p>
+
+            <p class="map"><img src="img/map.png" alt="マップ"></p>
+        </div>
+        <address>
+            <img src="img/map_icon.png" alt="">東京都港区赤坂xx-xx<br>
+            <img src="img/tel_icon.png" alt="">(03) 9999-9999<br>
+            <img src="img/email_icon.png" alt="">contact@theclyde.com
+        </address>
+
+        <!-- ページトップボタン -->
+        <p class="pagetop"><a href="#top"><img src="img/pagetopbutton.svg" alt="ページトップへ"></a></p>
+
+        <p class="tyosakuken">
+            <small>&copy;2016 THE CLYDE.
+                <!-- spanは改行しない モバイルで表示させないときに使う -->
+                <span>ALL RIGHTS RESERVED.</span>
+            </small>
+        </p>
+    </footer>
+</body>
+</html>
